@@ -2,12 +2,10 @@ import sys
 import pandas as pd
 import spacy
 
-def main(input_path=None, output_path=None):
+def main(input_path=None):
     """Read in the inputfile, extract predicates and possible arguments write them to a file."""
     if not input_path:
         input_path = sys.argv[1]  # path to file to analyze
-    if not output_path:
-        output_path = sys.argv[2] # path to outputfile
 
     data = []
     sentences = []
@@ -62,6 +60,7 @@ def main(input_path=None, output_path=None):
 
     # safe results with header to tsv file
     df = pd.DataFrame(data=data)
+    output_path = input_path.replace('.conll', '_pred_arg.txt')
     df.to_csv(output_path, sep='\t', header=True, index=False)
 
 if __name__ == '__main__':
