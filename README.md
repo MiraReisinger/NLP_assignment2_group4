@@ -5,10 +5,10 @@ The project was carried out by Elena Weber, Alyssa Macgregor-Hastie, Jiyun Sun a
 ## Data
 
 ## Code
-* `extract_pred_arg.py` This code extracts possible predicates and arguments out of inputfile and exports into a txt file. The script needs to be called from the command line, passing it the path to the .txt file to be analyzed as argument 1 and the output .txt as argument 2.
+* `extract_pred_arg.py` This code extracts possible predicates and arguments out of inputfile and exports into a txt file. The script needs to be called from the command line, passing it the path to the .txt file to be analyzed as argument 1. The results are stored at same place as inputfile with a path extraction '_pred_arg.txt'
 
 example usage:
-`python extract_pred_arg.py data/srl_univprop_en.dev.conll.txt, data/pred_arg.txt`
+`python extract_pred_arg.py data/srl_univprop_en.dev.conll`
 
 
 ## Resultsscree
