@@ -5,14 +5,18 @@ The project was carried out by Elena Weber, Alyssa Macgregor-Hastie, Jiyun Sun a
 ## Data
 
 ## Code
-* `xxxx` 
-The goal of this code is to extract the predicates and arguments in a dataframe and can be saved as a tsv file. The output consists of the tokenized sentence, pos tags, dependency labels, head, dependent, children, argument and predicate. To get the predicate the pos tag was used to see which token is classified as a verb and it was tagged as V for labeling the predicate. For the arguments a list of the most common relations ('nsubj', 'dobj', 'nmod', 'amod', 'ccomp', 'xcomp' 'conj') was extracted and used to find those within the dataframe. Those were tagged with ARG.
+* `extract_pred_arg.py` This code extracts possible predicates and arguments out of inputfile and exports into a txt file. The script needs to be called from the command line, passing it the path to the .txt file to be analyzed as argument 1 and the output .txt as argument 2.
+
+example usage:
+`python extract_pred_arg.py data/srl_univprop_en.dev.conll.txt, data/pred_arg.txt`
+
+
 ## Resultsscree
 
 # Answers Question 1 -5 
 1. *Extract predicates and arguments based on the dependency structure. Describe how you did this. Please note: Your approach is not going to be able to capture all predicates. If you have time left, you can replace your rule-based approach with a machine-learning-based approach.*
 
-Can be seen in code xxx 
+The goal of this code is to extract the predicates and arguments in a dataframe and can be saved as a tsv file. The output consists of the tokenized sentence, pos tags, dependency labels, head, dependent, children, argument and predicate. To get the predicate the pos tag was used to see which token is classified as a verb and it was tagged as V for labeling the predicate. For the arguments a list of the most common relations ('nsubj', 'dobj', 'nmod', 'amod', 'ccomp', 'xcomp' 'conj') was extracted and used to find those within the dataframe. Those were tagged with ARG.
 
 2. *Describe the classification task for argument classification. (You can decide whether you want to do this in one or in two steps.) Use your own words to describe what the classification instance is. You can refer to the background document for help.*
 
