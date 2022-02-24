@@ -5,6 +5,8 @@ The project was carried out by Elena Weber, Alyssa Macgregor-Hastie, Jiyun Sun a
 ## Data
 
 ## Code
+* `xxxx` 
+The goal of this code is to extract the predicates and arguments in a dataframe and can be saved as a tsv file. The output consists of the tokenized sentence, pos tags, dependency labels, head, dependent, children, argument and predicate. To get the predicate the pos tag was used to see which token is classified as a verb and it was tagged as V for labeling the predicate. For the arguments a list of the most common relations ('nsubj', 'dobj', 'nmod', 'amod', 'ccomp', 'xcomp' 'conj') was extracted and used to find those within the dataframe. Those were tagged with ARG.
 
 ## Resultsscree
 
