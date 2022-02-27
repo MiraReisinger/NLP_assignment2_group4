@@ -3,7 +3,7 @@ import pandas as pd
 #inputpath of the file that needs to be extracted 
 inputfile = "/data/srl_univprop_en.dev.conll"
 
-to_be_removed = ['# newdoc id =', '# sent_id =','# text = ', '*', 'Foreign'] 
+to_be_removed = ['# newdoc id =', '# sent_id =','# text = ', '*'] 
 #to_be_replaced = ['*']
 
 with open(inputfile, encoding='utf-8') as infile, open('data/updated_file.conll', 'w', encoding='utf-8')as newfile:
