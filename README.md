@@ -33,8 +33,9 @@ In a similar way to POS-tags, dependency relations are vital for this specific t
 POSITION FEATURE:
 As a general rule, the English language is structured in the S-V-O order (subject-verb-order). The position in which a token is established gives a great deal of information in regards to correctly classifying an argument. This feature can be represented as a binary value, e.g. if a token appears before a verb, it is assigned the value 0; if a token appears after a verb it is assigned the value 1.
 
+4. *Select a machine learning algorithm. You can select any algorithm and use existing implementations (such as sklearn), but please motivate briefly why you chose it. A possible motivation is that it has been shown to work well in existing approaches (based on literature you read).*
 
-4. The main classifier we opted to use is the Support Vector Machine (SVM), a supervised learning model for classification and regression tasks. An SVM distinguishes itself from other classifiers in the way that it creates a hyperplane to distinctly separate different categories. The hyperplane defines the maximum margin between the data points of each category, regularized by the C parameter that defines how much the classifier is ”allowed” to misclassify data points within the error margin.
+The main classifier we opted to use is the Support Vector Machine (SVM), a supervised learning model for classification and regression tasks. An SVM distinguishes itself from other classifiers in the way that it creates a hyperplane to distinctly separate different categories. The hyperplane defines the maximum margin between the data points of each category, regularized by the C parameter that defines how much the classifier is ”allowed” to misclassify data points within the error margin.
 
 5. *Generate training and test instances* 
 
