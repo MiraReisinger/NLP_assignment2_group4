@@ -5,13 +5,9 @@ The project was carried out by Elena Weber, Alyssa Macgregor-Hastie, Jiyun Sun a
 ## Data
 
 ## Code
-* `extract_pred_arg.py` This code extracts possible predicates and arguments out of inputfile and exports into a csv file. 
+* `extract_pred_arg.py` This code extracts the predicates and arguments and exports them as well as the tokens into a newly created csv file. 
 
-example usage:
-`python extract_pred_arg.py data/srl_univprop_en.dev.conll`
-
-
-## Resultsscree
+## Resultsscreen
 
 # Answers Question 1 -5 
 1. *Extract predicates and arguments based on the dependency structure. Describe how you did this. Please note: Your approach is not going to be able to capture all predicates. If you have time left, you can replace your rule-based approach with a machine-learning-based approach.*
