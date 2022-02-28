@@ -4,7 +4,6 @@ import pandas as pd
 inputfile = "/data/srl_univprop_en.dev.conll"
 
 to_be_removed = ['# newdoc id =', '# sent_id =','# text = ', '*'] 
-#to_be_replaced = ['*']
 
 with open(inputfile, encoding='utf-8') as infile, open('data/updated_file.conll', 'w', encoding='utf-8')as newfile:
     for line in infile:
