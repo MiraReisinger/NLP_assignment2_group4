@@ -5,9 +5,17 @@ The project was carried out by Elena Weber, Alyssa Macgregor-Hastie, Jiyun Sun a
 ## Data
 
 ## Code
-* `extract_pred_arg.py` This code extracts the predicates and arguments and exports them as well as the tokens into a newly created csv file. 
+* `extract_pred_arg.py` This code extracts the predicates and arguments and exports them as well as the tokens into a newly created csv file. Use this code for preprocessing the conll inputfiles. Use for both training- and testfile. HOW TO RUN IT?
+* `extract_features.py` This code generates all features to help the SVM classifier predict semantic roles. The input is the outputfile from `extract_pred_arg.py` for both training- and testfile. The script needs to be called from the command line, passing it the path to inputfile.
+    
+    example usage:
+    `python extract_features.py data/prepro_train.csv`
+    
+* `SVM.py` This codes traines and runs a SVM classifer for Semantic role Labling based on the outputs of `extract_features.py`. Usage is the same as `extract_features.py`
 
-## Resultsscreen
+## Results
+![Alt text](relative/path/to/img.jpg?raw=true "Title")
+
 
 # Answers Question 1 -5 
 1. *Extract predicates and arguments based on the dependency structure. Describe how you did this. Please note: Your approach is not going to be able to capture all predicates. If you have time left, you can replace your rule-based approach with a machine-learning-based approach.*
