@@ -25,4 +25,4 @@ conll_input = pd.read_csv(inputfile, delimiter = '\t', names = header_gold, enco
 extracted_conll = conll_input[['token', 'predicate', 'argument']] 
 
 #saving to a csv
-extracted_conll.to_csv('data/dev_token_pred_arg.csv', sep = '\t')
+extracted_conll.to_csv('data/dev_token_pred_arg.csv', sep = ',')
