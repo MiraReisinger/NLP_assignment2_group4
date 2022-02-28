@@ -9,8 +9,6 @@ to_be_removed = ['# newdoc id =', '# sent_id =','# text = ', '*']
 with open(inputfile, encoding='utf-8') as infile, open('data/updated_file.conll', 'w', encoding='utf-8')as newfile:
     for line in infile:
         if not any(to_be_removed in line for to_be_removed in to_be_removed):
-            #for line in infile:
-             #   line.replace('', '_')
             newfile.write(line)
 
 inputfile_updated =  "/data/updated_file.conll"
