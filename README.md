@@ -14,7 +14,7 @@ The project was carried out by Elena Weber, Alyssa Macgregor-Hastie, Jiyun Sun a
 * `SVM.py` This codes traines and runs a SVM classifer for Semantic role Labling based on the outputs of `extract_features.py`. Usage is the same as `extract_features.py`
 
 ## Results
-![Alt text](relative/path/to/img.jpg?raw=true "Title")
+![results_v1](https://user-images.githubusercontent.com/67761190/156067192-7b4b1449-53c3-41cd-8c81-635f532cea44.PNG)
 
 
 # Answers Question 1 -5 
