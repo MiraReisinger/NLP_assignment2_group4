@@ -3,10 +3,17 @@ from sklearn.svm import LinearSVC
 from sklearn.metrics import classification_report
 import sys
 
+### Parts of this code are based on an assignment for the course Machine Learning for NLP tought by Anstkse Fokkens at VU Amsterdam in 2021.
+
 def extract_features_and_labels(trainingfile):
-    '''XXXXX'''
+    '''Function that extracts features and gold labels from preprocessed file.
+    :param trainingfile: path to the (preprocessed) csv file
+    :return data: a list of dictionaries, with key-value pair providing the value for the feature `token' for individual instances
+    :return gold: a list of gold labels of individual instances'''
+    
     data = []
     gold = []
+    
     with open(trainingfile, 'r', encoding='utf8') as infile:
         for line in infile:
             components = line.rstrip('\n').split()
@@ -31,7 +38,15 @@ def extract_features_and_labels(trainingfile):
 
 
 def create_classifier(features, gold):
-    '''XXXXXX'''
+    ''' Function that takes feature-value pairs and gold labels as input and trains a SVM
+   
+    :param features: feature-value pairs
+    :param labels: gold labels
+    :type features: a list of dictionaries
+    :type labels: a list of strings
+    
+    :return classifier: a trained SVM classifier
+    :return vec: a DictVectorizer to which the feature values are fitted. '''
   
     model = LinearSVC(max_iter = 1000)
     vec = DictVectorizer()
@@ -42,7 +57,19 @@ def create_classifier(features, gold):
 
 
 def classify_data(model, vec, X_test, Y_test, testdata, outputfile):
-    '''XXXXXX'''
+    '''Function that creates predictions using SVM classifer and writes them out in a file
+    
+    :param model: trained classifer
+    :param vec: vectorizer in which the mapping between feature values and dimensions is stored
+    :param X_test: test instances
+    :param Y_test: test gold labels
+    :param testdata: path to the (preprocessed) test file
+    :outputfile: path for outputfile   
+    
+    :return predictions: list of output labels provided by the classifier on the test file
+    :return Y_test: list of gold labels as included in the test file
+    
+    '''
 
     features = vec.transform(X_test)
         
@@ -54,13 +81,19 @@ def classify_data(model, vec, X_test, Y_test, testdata, outputfile):
             outfile.write(line.rstrip('\n') + '\t' + predictions[counter] + '\n')
             counter += 1
     outfile.close()
+    
     return predictions, Y_test
 
 
 
 def create_report(gold_labels, predictions):
-    '''XXXXX'''
-#### this report gives the results for the classifier
+    '''
+    Function that creates precision, recall and f-score based on SVM classifer predictions
+    
+    :param predictions: predicted output by classifier
+    :param goldlabels: original gold labels - Y_test
+    '''
+    
     report = classification_report(gold_labels,predictions)
     print('---------------SVM LINEAR Classifier Report-------------------')
     print('Features used: token, pos, lemma, dependency, head, dependent,\n constituent, passive_voice, possible_ARG, head_predicate')
@@ -84,5 +117,6 @@ def main(trainingfile=None, testfile=None):
     predictions, gold_labels = classify_data(model, vec, X_test, Y_test, testfile, 'predictions.tsv')
     create_report(gold_labels, predictions)
 
+    
 if __name__ == '__main__':
     main()
