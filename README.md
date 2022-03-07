@@ -3,7 +3,7 @@
 The project was carried out by Elena Weber, Alyssa Macgregor-Hastie, Jiyun Sun and Mira Reisinger during the seminar ‘NLP Technology' taught by Antske Fokkens and Pia Sommerauer at VU Amsterdam.
 
 ## Data
-The data contains development, training and test files from the Universal Propositon Banks Project for English. <https://github.com/System-T/UniversalPropositions>
+The folder [**data**](https://github.com/MiraReisinger/NLP_assignment2_group4/tree/main/data) contains development, training and test files from the Universal Propositon Banks Project for English and can also be found [here](<https://github.com/System-T/UniversalPropositions>).
 
 ## Code
 * `extract_pred_arg.py` This code extracts the predicates and arguments and exports them as well as the tokens into a newly created csv file. Use this code for preprocessing the conll inputfiles. Use for both training- and testfile. HOW TO RUN IT?
