@@ -3,7 +3,7 @@
 The project was carried out by Elena Weber, Alyssa Macgregor-Hastie, Jiyun Sun and Mira Reisinger during the seminar ‘NLP Technology' taught by Antske Fokkens and Pia Sommerauer at VU Amsterdam.
 
 ## Data
-The folder [**data**](https://github.com/MiraReisinger/NLP_assignment2_group4/tree/main/data) contains the annotated development, training and test files from the Universal Propositon Banks Project for English and can also be found [here](<https://github.com/System-T/UniversalPropositions>). They are all in connll format. 
+The folder [**data**](https://github.com/MiraReisinger/NLP_assignment2_group4/tree/main/data) contains the annotated development, training and test files from the Universal Propositon Banks Project for English and can also be found [here](<https://github.com/System-T/UniversalPropositions>). They are all in conll format. 
 
 * `en_ewt-up-dev.conll` consists of 2000 sentences. 
 * `en_ewt_up_train.conll` consists of 12543 sentences.
