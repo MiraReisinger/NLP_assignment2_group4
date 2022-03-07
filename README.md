@@ -15,6 +15,7 @@ The screenshot below shows the typical structure of the files with the annotatio
 
 
 ## Code
+---------------------------needs to be updated---------------------------------------------------------
 * `extract_pred_arg.py` This code extracts the predicates and arguments and exports them as well as the tokens into a newly created csv file. Use this code for preprocessing the conll inputfiles. Use for both training- and testfile. HOW TO RUN IT?
 * `extract_features.py` This code generates all features to help the SVM classifier predict semantic roles. The input is the outputfile from `extract_pred_arg.py` for both training- and testfile. The script needs to be called from the command line, passing it the path to inputfile.
     
@@ -28,6 +29,7 @@ The screenshot below shows the typical structure of the files with the annotatio
 
 
 # Answers Question 1 -5 
+----------------------------------------------needs to be updated--------------------------------------------------------------------
 1. *Extract predicates and arguments based on the dependency structure. Describe how you did this. Please note: Your approach is not going to be able to capture all predicates. If you have time left, you can replace your rule-based approach with a machine-learning-based approach.*
 
 The inputfile is being loaded and preprocessed by removing items containing a hashtag or a star. Once the items are removed it is being saved into a new conll file called 'updated_file.conll'. Said file is read as a pandas dataframe with headers and in the following step the columns with the headers 'token', 'predicate', and 'argument'are saved in a new variable. This variable is saved as a csv file and used in the next steps of the assignment. 
