@@ -44,7 +44,7 @@ As a general rule, the English language is structured in the S-V-O order (subjec
 
 4. *Select a machine learning algorithm. You can select any algorithm and use existing implementations (such as sklearn), but please motivate briefly why you chose it. A possible motivation is that it has been shown to work well in existing approaches (based on literature you read).*
 
-The main classifier we opted to use is the Support Vector Machine (SVM), a supervised learning model for classification and regression tasks. An SVM distinguishes itself from other classifiers in the way that it creates a hyperplane to distinctly separate different categories. The hyperplane defines the maximum margin between the data points of each category, regularized by the C parameter that defines how much the classifier is ”allowed” to misclassify data points within the error margin.
+The core classifier we are going to make prediction is the Support Vector Machine (SVM), a supervised machine learning model for classification and regression tasks. An SVM distinguishes itself from other classifiers in the way that it creates a hyperplane to separate different categories. The hyperplane defines the maximum margin between the data points of each category, regularized by the C parameter that defines how much the classifier is ”allowed” to misclassify data points within the error margin. And we also made more practives before about this classifier, so we decided to make prediction with this classifier.
 
 5. *Generate training and test instances* 
 
