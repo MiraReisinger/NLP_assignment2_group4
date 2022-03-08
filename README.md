@@ -1,4 +1,5 @@
 # NLP_assignment2_group4
+## Sentiment Role Labeling
 
 The project was carried out by Elena Weber, Alyssa Macgregor-Hastie, Jiyun Sun, and Mira Reisinger during the seminar ‘NLP Technology' as part of the Text Mining program 2021/2022 taught by Antske Fokkens and Pia Sommerauer at VU Amsterdam.
 
