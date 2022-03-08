@@ -16,6 +16,7 @@ The screenshot below shows the typical structure of the files with the annotatio
 
 ## Code
 ---------------------------needs to be updated---------------------------------------------------------
+------------- also say something about spacy issue to recommend the version we have been using ---- 
 * `extract_pred_arg.py` This code extracts the predicates and arguments and exports them as well as the tokens into a newly created csv file. Use this code for preprocessing the conll inputfiles. Use for both training- and testfile. HOW TO RUN IT?
 * `extract_features.py` This code generates all features to help the SVM classifier predict semantic roles. The input is the outputfile from `extract_pred_arg.py` for both training- and testfile. The script needs to be called from the command line, passing it the path to inputfile.
     
