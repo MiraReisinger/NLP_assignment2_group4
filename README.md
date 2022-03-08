@@ -9,7 +9,7 @@ The folder [**data**](https://github.com/MiraReisinger/NLP_assignment2_group4/tr
 * `en_ewt_up_train.conll` consists of 12543 sentences.
 * `en_ewt_up_test.conll` consists of 2077 sentences.
 
-The screenshot below shows the typical structure of the files with the annotations. The data starts with the sent_id, usually a link to the article, and the text, which is the complete sentence. The conll file itself has 10 main columns, with, among others, the token, the lemma, the POS, and the dependency. The 10th column is the predicate-sense label - if there is no predicate it is replaced with a *'_'*. The columns starting from 11 shows the arguments, depending if a sentence only has one predicate then the row has 11 columns, if it has two predicates then it goes up to 12 columns and so on. 
+The screenshot below shows the typical structure of the files with the annotations. The data starts with the sent_id, usually a link to the article, and the text, which is the complete sentence. The conll file itself has 10 main columns, with, among others, the token, the lemma, the POS, and the dependency. The 10th column is the predicate-sense label - if there is no predicate it is replaced with a *'_'*. The columns starting from 11 shows the gold annotated arguments, depending if a sentence only has one predicate then the row has 11 columns, if it has two predicates then it goes up to 12 columns and so on. The sentence length varies greatly, thus there are several sentences with just one predicate and other with, for instance, four predicates. 
  
 ![Example structure data files](https://user-images.githubusercontent.com/90104896/157061220-27b6d9bc-626e-4be6-814f-747b16ae815a.png)
 
