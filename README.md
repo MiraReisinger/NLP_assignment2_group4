@@ -31,13 +31,16 @@ The screenshot below shows the typical structure of the files with the annotatio
 
 # Answers Question 1 -5 
 ----------------------------------------------needs to be updated--------------------------------------------------------------------
+## Predicate and Argument extraction 
 1. *Extract predicates and arguments based on the dependency structure. Describe how you did this. Please note: Your approach is not going to be able to capture all predicates. If you have time left, you can replace your rule-based approach with a machine-learning-based approach.*
 
 To extract the predicates and arguments based on the dependency structure the inputfile needs to be preprocessed first. After the file is being loaded the content is added to a default dictionary without the cells that are smaller than 2 and start with 'CopyOf'. Once the dictionary has been created a new file is being written that loops through the sentences and multiplies the sentence depending on the number of predicates within the sentence and adding the gold label arguments to column 11. Cells not containing a predicate are filled with an underscore. 
 The items containing a hashtag or a star are being removed because they are not needed in the next steps. Once the items are removed it is being saved into a new conll file. Said file is read as a pandas dataframe with headers and in the following step the columns with the headers 'token', 'predicate', and 'argument' are saved in a new variable. This variable is saved as a csv file and used in the next steps of the assignment. 
 
+## Classification task for argument classification
 2. *Describe the classification task for argument classification. (You can decide whether you want to do this in one or in two steps.) Use your own words to describe what the classification instance is. You can refer to the background document for help.*
 
+## List of features 
 3. *Make a list of features to extract (including but not limited to the syntactic dependency features extracted in Assignment 1). Add at least one lexical feature to your syntactic features (e.g. lemma, word embeddings). Describe all your features and explain why you chose them. You can check the literature in order to find out more about the features. You can also invent features yourself. Note: If you don’t manage to implement some of your features, please still include them in your list, but add a short comment stating that they are not implemented).*
 
 TOKEN
@@ -62,10 +65,11 @@ PASSIVE TOKENS
 
 POSSIBLE ARGUMENT
 
-
+## Machine Learning Algorithm
 4. *Select a machine learning algorithm. You can select any algorithm and use existing implementations (such as sklearn), but please motivate briefly why you chose it. A possible motivation is that it has been shown to work well in existing approaches (based on literature you read).*
 
 The core classifier we are going to make prediction is the Support Vector Machine (SVM), a supervised machine learning model for classification and regression tasks. An SVM distinguishes itself from other classifiers in the way that it creates a hyperplane to separate different categories. The hyperplane defines the maximum margin between the data points of each category, regularized by the C parameter that defines how much the classifier is ”allowed” to misclassify data points within the error margin. And we also made more practives before about this classifier, so we decided to make prediction with this classifier.
 
+## Training and test instances
 5. *Generate training and test instances* 
 
