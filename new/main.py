@@ -12,9 +12,9 @@ os.system("python duplicate_sentences.py data/en_ewt-up-test.conll")
 print('Duplicating sentences done')
 
 ## extract tokens, predicates and arguments
-os.system("python extract_pred_ARG.py data/en_ewt-up-dev_preprocessed.conll data/dev_updated")
-os.system("python extract_pred_ARG.py data/en_ewt-up-train_preprocessed.conll data/train_updated")
-os.system("python extract_pred_ARG.py data/en_ewt-up-test_preprocessed.conll data/test_updated")
+os.system("python extract_pred_arg.py data/en_ewt-up-dev_preprocessed.conll data/dev_updated")
+os.system("python extract_pred_arg.py data/en_ewt-up-train_preprocessed.conll data/train_updated")
+os.system("python extract_pred_arg.py data/en_ewt-up-test_preprocessed.conll data/test_updated")
 
 print('Extract tokens, predicates and arguments done')
 
@@ -36,5 +36,5 @@ print('Extract features done')
 # first argument for SVM.py is trainingfile with all features, second is the testfile with all features
 # This creates a file with the predictions and a report will be printed in the terminal
 
-os.system("python SVM_new.py data/train_all_features data/test_all_features")
+os.system("python SVM.py data/train_all_features data/test_all_features")
 
