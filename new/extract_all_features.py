@@ -69,7 +69,7 @@ def extract_features(input_path, output_path):
                                 'constituent': constituent, 'Passive': passive, 'possible_ARG': argument}
                 data.append(feature_dict)
 
-    # print(len(data), len(gold_a))
+    
     # safe results with header to tsv file
     df = pd.DataFrame(data=data)
     df['Gold'] = gold_a  # append gold labels at the end
@@ -82,7 +82,7 @@ def main(input_path=None):
     if not input_path:
         input_path = sys.argv[1]  # path to inputfile
 
-        extract_features(input_path, input_path.replace('pred_arg.csv', '_all_features'))
+        extract_features(input_path, input_path.replace('pred_arg.csv', 'all_features'))
 
 
 if __name__ == '__main__':
