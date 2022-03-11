@@ -43,6 +43,15 @@ You can also run each file individually.
 
 
 To use the SRL with AllenNLP first run `conll_to_json.py` and then `srl_main.py`
+
+To convert the ConLL files to JSON, the files can be run individually: 
+
+    example usage: `python conll_to_json.py data/srl_univprop_en.dev.conll` 
+    
+To run the LSTM model for Semantic Role Labeling simply run `srl_main.py` in your project terminal. 
+
+    example usage: `python srl_main.py`
+    
 * `conll_to_json.py` This [script](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/conll_to_json.py) takes in a ConLL file and converts it into a JSON format. The path of these converted  JSON files will be used as input for srl_main.py.
 
 * `srl_main.py` This [script](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/srl_main.py) executes SRL by using an LSTM model trained on the Allen NLP library. 
