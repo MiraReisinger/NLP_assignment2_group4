@@ -50,6 +50,7 @@ To use the SRL with AllenNLP first run `conll_to_json.py` and then `srl_main.py`
 ## Results
 
 ![all_labels](https://user-images.githubusercontent.com/67761190/157860569-1a098e24-aac1-4c5e-a9a0-3a5897a007ce.jpeg)
+![results](https://user-images.githubusercontent.com/67761190/157860740-a4c195f3-c934-4f9b-b6e5-24e21d8b8caa.jpeg)
 
 # Answers Question 1 -5 
 ## Predicate and Argument extraction 
