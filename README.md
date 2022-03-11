@@ -20,15 +20,22 @@ The screenshot below shows the typical structure of the files with the annotatio
 ## Code
 ---------------------------needs to be updated---------------------------------------------------------
 ------------- also say something about spacy issue to recommend the version we have been using ---- 
-* `[SVM.py](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/SVM.py)`
-* `[conll_to_json.py](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/conll_to_json.py)`
-* `[duplicate_sentences.py](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/duplicate_sentences.py)`
-* `[extract_all_features.py](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/extract_all_features.py)`
-* `[extract_pred_arg.py](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/extract_pred_arg.py)`
-* `[main.py](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/main.py)`
+* `SVM.py`
+[SVM.py](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/SVM.py)`
+* `conll_to_json.py`
+[conll_to_json.py](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/conll_to_json.py)`
+* `duplicate_sentences.py`
+[duplicate_sentences.py](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/duplicate_sentences.py)`
+* `extract_all_features.py`
+[extract_all_features.py](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/extract_all_features.py)`
+* `extract_pred_arg.py`
+[extract_pred_arg.py](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/extract_pred_arg.py)`
+* `main.py`
+[main.py](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/main.py)`
 
 
-* `[requirements.txt](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/requirements.txt)`
+* `requirements.txt`
+[requirements.txt](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/requirements.txt)`
 
 
 ## Results
