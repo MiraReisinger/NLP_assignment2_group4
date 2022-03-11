@@ -16,7 +16,7 @@ The screenshot below shows the typical structure of the files with the annotatio
  
 ![Example structure data files](https://user-images.githubusercontent.com/90104896/157061220-27b6d9bc-626e-4be6-814f-747b16ae815a.png)
 
-For part 2 of the assignment [AllenNLP](https://github.com/allenai/allennlp) to train a neural LSTM classifier for Semantic Role Labeling. The following files are the preprocessed ones converting the conll SRL files into JSON: 
+For part 2 of the assignment, [AllenNLP](https://github.com/allenai/allennlp) to train a neural LSTM classifier for Semantic Role Labeling. The following files are the preprocessed ones converting the conll SRL files into JSON. In the JSON file each line is a sentence with a single predicate and its corresponding labeled arguments.
 
 * `srl_univprop_en.dev.conllu.json`
 * The results for the train file in part 2 can be found in a [Google Drive folder](https://drive.google.com/drive/folders/1wyRniTKswTNm-xAhq-awG9wBm8aKRAzF?usp=sharing) since the files are too big to upload them to github. 
