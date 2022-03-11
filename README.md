@@ -50,10 +50,60 @@ To use the SRL with AllenNLP first run `conll_to_json.py` and then `srl_main.py`
 `requirements.txt` The [requirements.txt](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/requirements.txt) shows the versions of the packages that are needed to run the scripts. For spaCy we strongly recommend using the version stated or at least a very similar one as newer versions created issues with the custom tokenizer. 
 
 ## Results
-The following screenshots provide an overview of the evaluation results of part 1: 
+The following table provides an overview of the evaluation results of part 1: 
 
-![all_labels](https://user-images.githubusercontent.com/67761190/157860569-1a098e24-aac1-4c5e-a9a0-3a5897a007ce.jpeg)
-![results](https://user-images.githubusercontent.com/67761190/157860740-a4c195f3-c934-4f9b-b6e5-24e21d8b8caa.jpeg)
+|              | precision   | recall      | f1-score    | support     |
+|--------------|-------------|-------------|-------------|-------------|
+| ARG0         | 0.807669959 | 0.802077323 | 0.804863926 | 1733        |
+| ARG1         | 0.755232029 | 0.768281395 | 0.761700826 | 3241        |
+| ARG1-DSP     | 1           | 0.25        | 0.4         | 4           |
+| ARG2         | 0.561806656 | 0.627989371 | 0.593057298 | 1129        |
+| ARG3         | 0.46875     | 0.202702703 | 0.283018868 | 74          |
+| ARG4         | 0.454545455 | 0.178571429 | 0.256410256 | 56          |
+| ARG5         | 0           | 0           | 0           | 1           |
+| ARGA         | 0           | 0           | 0           | 2           |
+| ARGM-ADJ     | 0.631178707 | 0.728070175 | 0.676171079 | 228         |
+| ARGM-ADV     | 0.60625     | 0.586693548 | 0.596311475 | 496         |
+| ARGM-CAU     | 0.393939394 | 0.282608696 | 0.329113924 | 46          |
+| ARGM-COM     | 0           | 0           | 0           | 13          |
+| ARGM-CXN     | 0.25        | 0.25        | 0.25        | 12          |
+| ARGM-DIR     | 0.393939394 | 0.276595745 | 0.325       | 47          |
+| ARGM-DIS     | 0.853658537 | 0.769230769 | 0.809248555 | 182         |
+| ARGM-EXT     | 0.755555556 | 0.647619048 | 0.697435897 | 105         |
+| ARGM-GOL     | 0.25        | 0.083333333 | 0.125       | 24          |
+| ARGM-LOC     | 0.501901141 | 0.637681159 | 0.561702128 | 207         |
+| ARGM-LVB     | 0.793103448 | 0.666666667 | 0.724409449 | 69          |
+| ARGM-MNR     | 0.459016393 | 0.378378378 | 0.414814815 | 148         |
+| ARGM-MOD     | 0.995454545 | 0.990950226 | 0.993197279 | 442         |
+| ARGM-NEG     | 0.99537037  | 0.99537037  | 0.99537037  | 216         |
+| ARGM-PRD     | 0.407407407 | 0.25        | 0.309859155 | 44          |
+| ARGM-PRP     | 0.5         | 0.28        | 0.358974359 | 75          |
+| ARGM-PRR     | 0.65        | 0.376811594 | 0.47706422  | 69          |
+| ARGM-REC     | 0           | 0           | 0           | 0           |
+| ARGM-TMP     | 0.832432432 | 0.850828729 | 0.841530055 | 543         |
+| C-ARG0       | 0           | 0           | 0           | 3           |
+| C-ARG1       | 0.56        | 0.269230769 | 0.363636364 | 52          |
+| C-ARG1-DSP   | 0           | 0           | 0           | 1           |
+| C-ARG2       | 0.357142857 | 0.714285714 | 0.476190476 | 7           |
+| C-ARG3       | 0           | 0           | 0           | 2           |
+| C-ARG4       | 0           | 0           | 0           | 0           |
+| C-ARGM-CXN   | 0           | 0           | 0           | 5           |
+| C-ARGM-LOC   | 0           | 0           | 0           | 1           |
+| C-V          | 0.47826087  | 0.6875      | 0.564102564 | 16          |
+| Gold         | 1           | 1           | 1           | 1           |
+| R-ARG0       | 0.743902439 | 0.910447761 | 0.818791946 | 67          |
+| R-ARG1       | 0.448717949 | 0.673076923 | 0.538461538 | 52          |
+| R-ARG2       | 0           | 0           | 0           | 1           |
+| R-ARG3       | 0           | 0           | 0           | 0           |
+| R-ARGM-ADJ   | 0           | 0           | 0           | 1           |
+| R-ARGM-ADV   | 0           | 0           | 0           | 1           |
+| R-ARGM-DIR   | 0           | 0           | 0           | 1           |
+| R-ARGM-LOC   | 0.727272727 | 0.888888889 | 0.8         | 9           |
+| R-ARGM-MNR   | 0           | 0           | 0           | 8           |
+| R-ARGM-TMP   | 0           | 0           | 0           | 2           |
+| accuracy     | 0.726261128 | 0.726261128 | 0.726261128 | 0.726261128 |
+| macro avg    | 0.396436346 | 0.362210441 | 0.364796528 | 9436        |
+| weighted avg | 0.723250029 | 0.726261128 | 0.72183404  | 9436        |
 
 # Answers Question 1 - 4 
 ## Predicate and Argument extraction 
