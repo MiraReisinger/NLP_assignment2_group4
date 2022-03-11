@@ -2,6 +2,11 @@ import re, csv
 import json
 
 def conll_to_json(conll_file):
+    
+    '''
+    This function takes a ConLL file as input and returns it as a JSON file.
+    :param conll_file: the parameter is the path to the ConLL file to be converted
+    '''
 
     infos = {}
     num = 0
@@ -77,3 +82,7 @@ def conll_to_json(conll_file):
             else:
                 pass
     fw.close()
+
+
+if __name__ == '__main__':
+    main()
