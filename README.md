@@ -20,13 +20,16 @@ The screenshot below shows the typical structure of the files with the annotatio
 ## Code
 ---------------------------needs to be updated---------------------------------------------------------
 ------------- also say something about spacy issue to recommend the version we have been using ---- 
-* `extract_pred_arg.py` This code extracts the predicates and arguments and exports them as well as the tokens into a newly created csv file. Use this code for preprocessing the conll inputfiles. Use for both training- and testfile. HOW TO RUN IT?
-* `extract_features.py` This code generates all features to help the SVM classifier predict semantic roles. The input is the outputfile from `extract_pred_arg.py` for both training- and testfile. The script needs to be called from the command line, passing it the path to inputfile.
-    
-    example usage:
-    `python extract_features.py data/prepro_train.csv`
-    
-* `SVM.py` This codes traines and runs a SVM classifer for Semantic role Labling based on the outputs of `extract_features.py`. Usage is the same as `extract_features.py`
+* `[SVM.py](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/SVM.py)`
+* `[conll_to_json.py](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/conll_to_json.py)`
+* `[duplicate_sentences.py](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/duplicate_sentences.py)`
+* `[extract_all_features.py](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/extract_all_features.py)`
+* `[extract_pred_arg.py](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/extract_pred_arg.py)`
+* `[main.py](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/main.py)`
+
+
+* `[requirements.txt](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/requirements.txt)`
+
 
 ## Results
 ![results_v1](https://user-images.githubusercontent.com/67761190/156067192-7b4b1449-53c3-41cd-8c81-635f532cea44.PNG)
