@@ -44,10 +44,13 @@ example usage: `python extract_features.py data/test_pred_arg.csv`
 [main.py](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/main.py)
 
 
-UPLOAD SRL_MAIN CODE AND PLEASE UPDATE THIS PART SO IT SHOWS HOW TO RUN IT
 To use the SRL with AllenNLP first run `conll_to_json.py` and then `srl_main.py`
-* `conll_to_json.py`
+* `conll_to_json.py` This script takes in a ConLL file and converts it into a JSON format. The path of these converted  JSON files will be used as input for srl_main.py.
 [conll_to_json.py](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/conll_to_json.py)
+
+* `srl_main.py` This script executes SRL by using an LSTM model trained on the Allen NLP library. 
+[srl_main.py](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/srl_main.py)
+
 
 
 * `requirements.txt`
