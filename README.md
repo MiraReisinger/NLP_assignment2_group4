@@ -21,22 +21,21 @@ The screenshot below shows the typical structure of the files with the annotatio
 ---------------------------needs to be updated---------------------------------------------------------
 ------------- also say something about spacy issue to recommend the version we have been using ---- 
 * `SVM.py`
-[SVM.py](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/SVM.py)`
+[SVM.py](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/SVM.py)
 * `conll_to_json.py`
-[conll_to_json.py](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/conll_to_json.py)`
+[conll_to_json.py](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/conll_to_json.py)
 * `duplicate_sentences.py`
-[duplicate_sentences.py](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/duplicate_sentences.py)`
+[duplicate_sentences.py](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/duplicate_sentences.py)
 * `extract_all_features.py`
-[extract_all_features.py](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/extract_all_features.py)`
+[extract_all_features.py](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/extract_all_features.py)
 * `extract_pred_arg.py`
-[extract_pred_arg.py](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/extract_pred_arg.py)`
+[extract_pred_arg.py](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/extract_pred_arg.py)
 * `main.py`
-[main.py](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/main.py)`
+[main.py](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/main.py)
 
 
 * `requirements.txt`
-[requirements.txt](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/requirements.txt)`
-
+For spaCy we strongly recommend using the version stated in the [requirements.txt](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/requirements.txt) as newer versions created issues with the custom tokenizer. 
 
 ## Results
 ![results_v1](https://user-images.githubusercontent.com/67761190/156067192-7b4b1449-53c3-41cd-8c81-635f532cea44.PNG)
