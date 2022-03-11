@@ -22,20 +22,32 @@ For part 2 of the assignment, [AllenNLP](https://github.com/allenai/allennlp) to
 * The results for the `train file` in part 2 can be found in a [Google Drive folder](https://drive.google.com/drive/folders/1wyRniTKswTNm-xAhq-awG9wBm8aKRAzF?usp=sharing) since the files are too big to upload them to github. 
 
 ## Code
----------------------------needs to be updated---------------------------------------------------------
+To use this rule-based code for Semantic Role Labeling simply run `main.py` in your project terminal.
+example usage: `python main.py`
 
-* `SVM.py`
+You can also run each file individually. 
+example usage: `python extract_features.py data/test_pred_arg.csv`
+
+* `duplicate_sentences.py` This code duplicates sentences that have more than one predicate as many times as there are predicates in them.
+[duplicate_sentences.py](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/duplicate_sentences.py)
+
+* `extract_pred_arg.py` This code extracts the predicates and arguments and exports them as well as the tokens into a newly created csv file. Use this code for preprocessing the conll inputfiles.
+[extract_pred_arg.py](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/extract_pred_arg.py)
+
+* `extract_all_features.py` This code generates all features to help the SVM classifier predict semantic roles. The input is the outputfile from `extract_pred_arg.py`. 
+[extract_all_features.py](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/extract_all_features.py)
+
+* `SVM.py` This codes trains and runs a SVM classifer for Semantic Role Labling based on the outputs of `extract_features.py`. It will print a classification report in the terminal as well as a csv file with the report in the data folder.
 [SVM.py](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/SVM.py)
+
+* `main.py` This code runs the whole rule-based system.
+[main.py](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/main.py)
+
+
+UPLOAD SRL_MAIN CODE AND PLEASE UPDATE THIS PART SO IT SHOWS HOW TO RUN IT
+To use the SRL with AllenNLP first run `conll_to_json.py` and then `srl_main.py`
 * `conll_to_json.py`
 [conll_to_json.py](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/conll_to_json.py)
-* `duplicate_sentences.py`
-[duplicate_sentences.py](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/duplicate_sentences.py)
-* `extract_all_features.py`
-[extract_all_features.py](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/extract_all_features.py)
-* `extract_pred_arg.py`
-[extract_pred_arg.py](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/extract_pred_arg.py)
-* `main.py`
-[main.py](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/main.py)
 
 
 * `requirements.txt`
