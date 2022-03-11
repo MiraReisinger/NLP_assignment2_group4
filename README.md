@@ -35,6 +35,8 @@ The screenshot below shows the typical structure of the files with the annotatio
 
 
 * `requirements.txt`
+
+
 For spaCy we strongly recommend using the version stated in the [requirements.txt](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/requirements.txt) as newer versions created issues with the custom tokenizer. 
 
 ## Results
