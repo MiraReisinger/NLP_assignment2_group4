@@ -167,9 +167,9 @@ PASSIVE TOKENS
 
 This binary feature detects if a sentence/clause is written in passive or active voice. Depending on this the argument structure changes.
  
-POSSIBLE ARGUMENT
+Possible ARGUMENT or PREDICATE
 
-The process for this feature involves identifying tokens with a “VERB” POS-tag and extracting the corresponding argument. As the data is not necessarily at a gold standard, there is a chance that some of the tokens are mislabelled as predicates, therefore it is not certain if the corresponding arguments are also correct. 
+This feature uses the outcome of the very simple identification task we did in 1. As a guide for the classifier to see what potentially can be an argument/predicate.
 
 PREDICATE LOOK UP (not implemented)
 
