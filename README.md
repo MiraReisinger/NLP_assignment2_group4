@@ -55,7 +55,7 @@ The following screenshots provide an overview of the evaluation results of part 
 ![all_labels](https://user-images.githubusercontent.com/67761190/157860569-1a098e24-aac1-4c5e-a9a0-3a5897a007ce.jpeg)
 ![results](https://user-images.githubusercontent.com/67761190/157860740-a4c195f3-c934-4f9b-b6e5-24e21d8b8caa.jpeg)
 
-# Answers Question 1 -5 
+# Answers Question 1 - 4 
 ## Predicate and Argument extraction 
 1. *Extract predicates and arguments based on the dependency structure. Describe how you did this. Please note: Your approach is not going to be able to capture all predicates. If you have time left, you can replace your rule-based approach with a machine-learning-based approach.*
 
