@@ -95,12 +95,19 @@ def create_report(gold_labels, predictions):
     :param predictions: predicted output by classifier
     :param goldlabels: original gold labels - Y_test
     '''
-    #pred_labels = gold_labels.remove('_')
     report = classification_report(gold_labels,predictions)
     print('---------------SVM LINEAR Classifier Report-------------------')
     print('Features used: token, pos, lemma, dependency, head, dependent,\n constituent, passive_voice, possible_ARG, head_predicate')
     print()
     print(report)
+    
+def classification_report_csv(gold_labels, predictions):
+    '''
+    This function creates classification report as dictionary and exports it to a csv file in the data folder
+    source: https://stackoverflow.com/questions/39662398/scikit-learn-output-metrics-classification-report-into-csv-tab-delimited-format
+    '''
+    clsf_report = pd.DataFrame(classification_report(y_true=gold_labels, y_pred=predictions, output_dict=True)).transpose()
+    clsf_report.to_csv('data/classification_report.csv', index=True)
 
 
 def main(trainingfile=None, testfile=None):
@@ -119,7 +126,9 @@ def main(trainingfile=None, testfile=None):
     predictions, gold_labels = classify_data(model, vec, X_test, Y_test, testfile, 'data/predictions.tsv')
     print('Predictions done - report will be created now')
     create_report(gold_labels, predictions)
-
+    classification_report_csv(gold_labels, predictions)
+    print('Main file Done')
+    
     
 if __name__ == '__main__':
     main()
