@@ -34,7 +34,7 @@ print('Extract features done')
 ### Train classifier and evaluation ###
 #######################################
 # first argument for SVM.py is trainingfile with all features, second is the testfile with all features
-# This creates a file with the predictions and a report will be printed in the terminal
+# This creates a file with the predictions and a report will be printed in the terminal and a csv file will be created in data folder
 
 os.system("python SVM.py data/train_all_features data/test_all_features")
 
