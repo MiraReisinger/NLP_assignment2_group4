@@ -23,10 +23,12 @@ For part 2 of the assignment, [AllenNLP](https://github.com/allenai/allennlp) is
 
 ## Code
 To use this rule-based code for Semantic Role Labeling simply run `main.py` in your project terminal.
-example usage: `python main.py`
+
+    example usage: `python main.py`
 
 You can also run each file individually. 
-example usage: `python extract_features.py data/test_pred_arg.csv`
+
+    example usage: `python extract_features.py data/test_pred_arg.csv`
 
 * `duplicate_sentences.py` This [code](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/duplicate_sentences.py) duplicates sentences that have more than one predicate as many times as there are predicates in them.
 
