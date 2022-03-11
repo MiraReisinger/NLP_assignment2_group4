@@ -42,6 +42,8 @@ You can also run each file individually.
 * `main.py` This [code](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/main.py) runs the whole rule-based system.
 
 
+
+
 To use the SRL with AllenNLP first run `conll_to_json.py` and then `srl_main.py`
 
 To convert the ConLL files to JSON, the files can be run individually: 
