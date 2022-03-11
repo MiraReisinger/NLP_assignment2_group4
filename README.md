@@ -101,7 +101,7 @@ The following table provides an overview of the evaluation results of part 1:
 | R-ARGM-LOC   | 0.73      | 0.89   | 0.80     | 9           |
 | R-ARGM-MNR   | 0.00      | 0.00   | 0.00     | 8           |
 | R-ARGM-TMP   | 0.00      | 0.00   | 0.00     | 2           |
-| accuracy     | 0.73      | 0.73   | 0.73     | 0.73        |
+| accuracy     |           |        | 0.73     | 9436        |
 | macro avg    | 0.40      | 0.36   | 0.36     | 9436        |
 | weighted avg | 0.72      | 0.73   | 0.72     | 9436        |
 
