@@ -19,7 +19,7 @@ def extract_features_and_labels(trainingfile):
     with open(trainingfile, 'r', encoding='utf-8') as infile:
         for line in infile:
             components = line.rstrip('\n').split()
-            if len(components) > 0:
+            if components[-1] != "_" and components[-1] != "V": # we only want the arguments classified
                 token = components[0]
                 pos = components[1]
                 lemma = components[2]
@@ -58,32 +58,24 @@ def create_classifier(features, gold):
     return model, vec
 
 
-def classify_data(model, vec, X_test, Y_test, testdata, outputfile):
-    '''Function that creates predictions using SVM classifer and writes them out in a file
+def classify_data(model, vec, X_test, Y_test, testdata):
+    '''Function that creates predictions using SVM classifer
     
     :param model: trained classifer
     :param vec: vectorizer in which the mapping between feature values and dimensions is stored
     :param X_test: test instances
     :param Y_test: test gold labels
     :param testdata: path to the (preprocessed) test file
-    :outputfile: path for outputfile   
+       
     
     :return predictions: list of output labels provided by the classifier on the test file
     :return Y_test: list of gold labels as included in the test file
     
     '''
 
-    features = vec.transform(X_test)
-        
+    features = vec.transform(X_test)  
     predictions = model.predict(features)
-    outfile = open(outputfile, 'w', encoding='utf-8')
-    counter = 0
 
-    for line in open(testdata, 'r', encoding='utf-8'):
-        if len(line.rstrip('\n').split()) > 0:
-            outfile.write(line.rstrip('\n') + '\t' + predictions[counter] + '\n')
-            counter += 1
-    outfile.close()
 
     return predictions, Y_test
 
@@ -123,11 +115,10 @@ def main(trainingfile=None, testfile=None):
 
     # create classifier and report
     model, vec = create_classifier(X_train, Y_train)
-    predictions, gold_labels = classify_data(model, vec, X_test, Y_test, testfile, 'data/predictions.tsv')
+    predictions, gold_labels = classify_data(model, vec, X_test, Y_test, testfile)
     print('Predictions done - report will be created now')
     create_report(gold_labels, predictions)
     classification_report_csv(gold_labels, predictions)
-    print('Main file Done')
     
     
 if __name__ == '__main__':
