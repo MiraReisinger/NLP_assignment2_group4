@@ -1,5 +1,6 @@
 import re, csv
 import json
+import sys
 
 def conll_to_json(conll_file):
     
@@ -84,5 +85,14 @@ def conll_to_json(conll_file):
     fw.close()
 
 
+def main(argv=None):
+    if argv is None:
+        argv = sys.argv  # path to inputfile
+
+    input_path = argv[1]
+
+
+    conll_to_json(input_path)
+    
 if __name__ == '__main__':
     main()
