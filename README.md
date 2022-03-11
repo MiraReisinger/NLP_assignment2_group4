@@ -65,13 +65,15 @@ The pipeline goes as follows first the predicates have to be identified and clas
 
 TOKEN
 
-We have selected the token as our lexical feature for this assignment. We have opted for word-tokenization (as opposed to character or sub-word tokenization) as it is more relevant to the purpose of argument identification and, in turn, argument classification. 
-    
+We have selected the token as our lexical feature for this assignment. We have opted for word-tokenization (as opposed to character or sub-word tokenization) as it is more relevant to the purpose of argument identification and, in turn, argument classification.
+
 POS-TAG
 
 The POS-tag as a feature is essential for the task of argument classification. In linguistic terms, a predicate is a verb and an argument is generally a noun. Therefore, any token labelled as a verb is automatically classified as a predicate, whilst a token labelled as a noun can be considered to be an argument (depending on its relation to the predicate).
 
 LEMMA
+
+We selected the lemma as our lexical feature for this project. By lemmatizing a word and therefore removing morphological inflections, the resulting lemma could less room for ambiguity and more accurate semantic detection. 
 
 DEPENDENCY RELATION
 
@@ -79,11 +81,19 @@ In a similar way to POS-tags, dependency relations are vital for this specific t
 
 HEAD OF DEPENDENCY
 
-CONSTITUENT 
+The “head” indicates the word which the selected token is a dependent of. The identification of the head could result in the correct identification and extraction of a predicate and argument.
+
+CONSTITUENT
+
+Linguistically speaking, a constituent can be defined as part of a sentence. Constituents can be identified as noun phrases or verb phrases, with noun phrases typically containing the argument, and the verb phrases containing the predicate. The extraction and identification of the constituent is therefore essential for the task of argument classification.
 
 PASSIVE TOKENS
 
+This process identifies and extracts passive tokens within a dependency pipeline. If a token is identified as ‘passive’ the output is assigned a ‘True’ label, otherwise it is assigned ‘False’. 
+ 
 POSSIBLE ARGUMENT
+
+The process for this feature involves identifying tokens with a “VERB” POS-tag, and extracting the corresponding argument. As the data is not necessarily at a gold standard, there is a chance that some of the tokens are mislabelled as predicates, therefore it is not certain if the corresponding arguments are also correct. 
 
 ## Machine Learning Algorithm
 4. *Select a machine learning algorithm. You can select any algorithm and use existing implementations (such as sklearn), but please motivate briefly why you chose it. A possible motivation is that it has been shown to work well in existing approaches (based on literature you read).*
