@@ -28,42 +28,30 @@ example usage: `python main.py`
 You can also run each file individually. 
 example usage: `python extract_features.py data/test_pred_arg.csv`
 
-* `duplicate_sentences.py` This code duplicates sentences that have more than one predicate as many times as there are predicates in them.
-[duplicate_sentences.py](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/duplicate_sentences.py)
+* `duplicate_sentences.py` This [code](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/duplicate_sentences.py) duplicates sentences that have more than one predicate as many times as there are predicates in them.
 
-* `extract_pred_arg.py` This code extracts the predicates and arguments and exports them as well as the tokens into a newly created csv file. Use this code for preprocessing the conll inputfiles.
-[extract_pred_arg.py](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/extract_pred_arg.py)
+* `extract_pred_arg.py` This [code](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/extract_pred_arg.py) extracts the predicates and arguments and exports them as well as the tokens into a newly created csv file. Use this code for preprocessing the conll inputfiles.
 
-* `extract_all_features.py` This code generates all features to help the SVM classifier predict semantic roles. The input is the outputfile from `extract_pred_arg.py`. 
-[extract_all_features.py](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/extract_all_features.py)
+* `extract_all_features.py` This [code](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/extract_all_features.py) generates all features to help the SVM classifier predict semantic roles. The input is the outputfile from `extract_pred_arg.py`. 
 
-* `SVM.py` This codes trains and runs a SVM classifer for Semantic Role Labling based on the outputs of `extract_features.py`. It will print a classification report in the terminal as well as a csv file with the report in the data folder.
-[SVM.py](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/SVM.py)
+* `SVM.py` This [code](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/SVM.py)
+ trains and runs a SVM classifer for Semantic Role Labling based on the outputs of `extract_features.py`. It will print a classification report in the terminal as well as a csv file with the report in the data folder.
 
-* `main.py` This code runs the whole rule-based system.
-[main.py](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/main.py)
+* `main.py` This [code](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/main.py) runs the whole rule-based system.
 
 
 To use the SRL with AllenNLP first run `conll_to_json.py` and then `srl_main.py`
-* `conll_to_json.py` This script takes in a ConLL file and converts it into a JSON format. The path of these converted  JSON files will be used as input for srl_main.py.
-[conll_to_json.py](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/conll_to_json.py)
+* `conll_to_json.py` This [script](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/conll_to_json.py) takes in a ConLL file and converts it into a JSON format. The path of these converted  JSON files will be used as input for srl_main.py.
 
-* `srl_main.py` This script executes SRL by using an LSTM model trained on the Allen NLP library. 
-[srl_main.py](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/srl_main.py)
+* `srl_main.py` This [script](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/srl_main.py) executes SRL by using an LSTM model trained on the Allen NLP library. 
 
-
-
-* `requirements.txt`
-
-
-For spaCy we strongly recommend using the version stated in the [requirements.txt](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/requirements.txt) or at least a very similar one as newer versions created issues with the custom tokenizer. 
+* `requirements.txt` The [requirements.txt](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/requirements.txt) shows the versions of the packages that are needed to run the scripts. For spaCy we strongly recommend using the version stated or at least a very similar one as newer versions created issues with the custom tokenizer. 
 
 ## Results
 ![results_v1](https://user-images.githubusercontent.com/67761190/156067192-7b4b1449-53c3-41cd-8c81-635f532cea44.PNG)
 
 
 # Answers Question 1 -5 
-----------------------------------------------needs to be updated--------------------------------------------------------------------
 ## Predicate and Argument extraction 
 1. *Extract predicates and arguments based on the dependency structure. Describe how you did this. Please note: Your approach is not going to be able to capture all predicates. If you have time left, you can replace your rule-based approach with a machine-learning-based approach.*
 
