@@ -145,7 +145,7 @@ We have selected the token as our lexical feature for this assignment. We have o
 
 POS-TAG
 
-The POS-tag as a feature is essential for the task of argument classification. In linguistic terms, a predicate is a verb and an argument is generally a noun. Therefore, any token labeled as a verb is automatically classified as a predicate, whilst a token labeled as a noun can be considered to be an argument (depending on its relation to the predicate).
+The POS-tag as a feature is essential for the task of argument classification. In linguistic terms, a predicate is a verb and an argument can be of various POS tags, in the example shown in question 2 the arguments are mostly nouns but can also, among other POS-tags, come in form of a pronoun or an adverb. The POS-tag is especially useful for finding the predicates but also supports while detecting the arguments connected to them. 
 
 LEMMA
 
@@ -153,7 +153,7 @@ We selected the lemma as our lexical feature for this project. By lemmatizing a 
 
 DEPENDENCY RELATION
 
-In a similar way to POS-tags, dependency relations are vital for this specific task. By identifying the relation between tokens, we can accurately define which tokens are the most dependent on the head of the phrase, and therefore which ones can be classified as arguments.
+A dependency relation shows, as it already is in the name, the dependency of different tokens within the sentence to each other. While looking at the dependency, the relation between predicate and argument can be detected. 
 
 HEAD OF DEPENDENCY
 
@@ -165,14 +165,19 @@ Linguistically speaking, a constituent can be defined as part of a sentence. Con
 
 PASSIVE TOKENS
 
-This process identifies and extracts passive tokens within a dependency pipeline. If a token is identified as ‘passive’ the output is assigned a ‘True’ label, otherwise, it is assigned ‘False’. 
+This binary feature detects if a sentence/clause is written in passive or active voice. Depending on this the argument structure changes.
  
 POSSIBLE ARGUMENT
 
 The process for this feature involves identifying tokens with a “VERB” POS-tag and extracting the corresponding argument. As the data is not necessarily at a gold standard, there is a chance that some of the tokens are mislabelled as predicates, therefore it is not certain if the corresponding arguments are also correct. 
 
+PREDICATE LOOK UP (not implemented)
+
+A feature that can look up the PropBank frame files of each predicate and provides the number and types of argument it takes in this sentence.
+
 ## Machine Learning Algorithm
 4. *Select a machine learning algorithm. You can select any algorithm and use existing implementations (such as sklearn), but please motivate briefly why you chose it. A possible motivation is that it has been shown to work well in existing approaches (based on literature you read).*
 
-In order to predict the arguments, we decided for the Support Vector Machine (SVM). SVM is a supervised machine learning model for classification and regression tasks. It distinguishes itself from other classifiers in the way that it creates a hyperplane to separate different categories. The hyperplane defines the maximum margin between the data points of each category, regularized by the C parameter that defines how much the classifier is ”allowed” to misclassify data points within the error margin. Related tasks and projects have also shown its effectiveness. 
+In order to predict the arguments, we decided for the Support Vector Machine (SVM). SVM is a supervised machine learning model for classification and regression tasks. It distinguishes itself from other classifiers in the way that it creates a hyperplane to separate different categories. The hyperplane defines the maximum margin between the data points of each category, regularized by the C parameter that defines how much the classifier is ”allowed” to misclassify data points within the error margin. Related tasks and projects have also shown its effectiveness of SVM closely followed by Linear Regression. The difference in the evaluation was small but in the end we decided for SVM.
+To train the classifier, we used the gold labels from the training data provided and not the silver labels created in our step 1. 
 
