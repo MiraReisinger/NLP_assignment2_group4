@@ -54,6 +54,10 @@ The items containing a hashtag or a star are being removed because they are not 
 ## Classification task for argument classification
 2. *Describe the classification task for argument classification. (You can decide whether you want to do this in one or in two steps.) Use your own words to describe what the classification instance is. You can refer to the background document for help.*
 
+As stated above, the task Semantic Role Labeling focuses on detecting who does what to whom within a sentence. The roles indicate a relation within predicate and the arguments, or the predicates' participants and can have different functions, like agent, the volitional causer of an event. The goal of the task is to identify and classify the arguments of the individual predicates and assign them semantic labels that give an indication about the position they have with predicates, meaning an output with labeled arguments. 
+
+The pipeline goes as follows first the predicates have to be identified and classified, after that the arguments of the individual predicates can be detected based on said predicates. Afterward, the role labeling with the classifier, in our case the SVM, is being used to predict the arguments. 
+
 ## List of features 
 3. *Make a list of features to extract (including but not limited to the syntactic dependency features extracted in Assignment 1). Add at least one lexical feature to your syntactic features (e.g. lemma, word embeddings). Describe all your features and explain why you chose them. You can check the literature in order to find out more about the features. You can also invent features yourself. Note: If you don’t manage to implement some of your features, please still include them in your list, but add a short comment stating that they are not implemented).*
 
