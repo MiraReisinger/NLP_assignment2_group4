@@ -3,6 +3,8 @@
 
 The project *Traditional Semantic Role Labeling (SRL) system using explicit features* was carried out by [Elena Weber](https://github.com/elena-theresa-weber), [Alyssa Macgregor-Hastie](https://github.com/real-housewives-of-python), [Jiyun Sun](https://github.com/jiyunsun), and [Mira Reisinger](https://github.com/MiraReisinger) during the seminar ‘NLP Technology' as part of the Text Mining program 2021/2022 taught by Antske Fokkens and Pia Sommerauer at VU Amsterdam.
 
+Semantic Role Labeling is about finding out who does what to whom using semantic representations within the sentences. The semantic roles indicate a relation among a predicate and its participants which is why the goal of the task is to identify and classify arguments of a given verb and assign them semantic labels that describe the roles they play in the predicate. 
+
 ## Data
 The folder [**data**](https://github.com/MiraReisinger/NLP_assignment2_group4/tree/main/data) contains the annotated development, training and test files from the Universal Propositon Banks Project for English and can also be found [here](<https://github.com/System-T/UniversalPropositions>). They are all in conll format. 
 
