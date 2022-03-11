@@ -45,11 +45,11 @@ To use the SRL with AllenNLP first run `conll_to_json.py` and then `srl_main.py`
 
 * `srl_main.py` This [script](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/srl_main.py) executes SRL by using an LSTM model trained on the Allen NLP library. 
 
-* `requirements.txt` The [requirements.txt](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/requirements.txt) shows the versions of the packages that are needed to run the scripts. For spaCy we strongly recommend using the version stated or at least a very similar one as newer versions created issues with the custom tokenizer. 
+`requirements.txt` The [requirements.txt](https://github.com/MiraReisinger/NLP_assignment2_group4/blob/main/requirements.txt) shows the versions of the packages that are needed to run the scripts. For spaCy we strongly recommend using the version stated or at least a very similar one as newer versions created issues with the custom tokenizer. 
 
 ## Results
-![results_v1](https://user-images.githubusercontent.com/67761190/156067192-7b4b1449-53c3-41cd-8c81-635f532cea44.PNG)
 
+![all_labels](https://user-images.githubusercontent.com/67761190/157860569-1a098e24-aac1-4c5e-a9a0-3a5897a007ce.jpeg)
 
 # Answers Question 1 -5 
 ## Predicate and Argument extraction 
