@@ -108,6 +108,6 @@ The process for this feature involves identifying tokens with a “VERB” POS-t
 
 ## Machine Learning Algorithm
 4. *Select a machine learning algorithm. You can select any algorithm and use existing implementations (such as sklearn), but please motivate briefly why you chose it. A possible motivation is that it has been shown to work well in existing approaches (based on literature you read).*
---- to be updated ----
-The core classifier we are going to make a prediction is the Support Vector Machine (SVM), a supervised machine learning model for classification and regression tasks. An SVM distinguishes itself from other classifiers in the way that it creates a hyperplane to separate different categories. The hyperplane defines the maximum margin between the data points of each category, regularized by the C parameter that defines how much the classifier is ”allowed” to misclassify data points within the error margin. And we also made more practives before about this classifier, so we decided to make prediction with this classifier.
+
+In order to predict the arguments, we decided for the Support Vector Machine (SVM). SVM is a supervised machine learning model for classification and regression tasks. It distinguishes itself from other classifiers in the way that it creates a hyperplane to separate different categories. The hyperplane defines the maximum margin between the data points of each category, regularized by the C parameter that defines how much the classifier is ”allowed” to misclassify data points within the error margin. Related tasks and projects have also shown its effectiveness. 
 
