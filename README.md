@@ -153,7 +153,7 @@ We selected the lemma as our lexical feature for this project. By lemmatizing a 
 
 DEPENDENCY RELATION
 
-A dependency relation shows, as it already is in the name, the dependency of different tokens within the sentence to each other. While looking at the dependency, the relation between predicate and argument can be detected. 
+A dependency relation shows, as it already is in the name, the dependency of different tokens within the sentence to each other. While looking at the dependency, the relation between predicate and argument can be detected. spaCy also takes the passive dependencies into consideration and marks them accordingly.
 
 HEAD OF DEPENDENCY
 
@@ -165,7 +165,7 @@ Linguistically speaking, a constituent can be defined as part of a sentence. Con
 
 PASSIVE TOKENS
 
-This binary feature detects if a sentence/clause is written in passive or active voice. Depending on this the argument structure changes.
+This binary feature detects if a sentence/clause is written in passive or active voice. Depending on this the argument structure changes. As already mentioned in the feature dependency relation above, spaCy includes the passive dependencies and marks them accordingly.
  
 Possible ARGUMENT or PREDICATE
 
