@@ -132,7 +132,7 @@ As stated above, the task Semantic Role Labeling focuses on detecting who does w
 
 The pipeline goes as follows first the predicates have to be identified and classified, after that the arguments of the individual predicates can be detected based on said predicates. Afterward, the role labeling with the classifier, in our case the SVM, is being used to predict the arguments. 
 
-![Example structure of arguments](https://www.dropbox.com/home?preview=Screenshot+2022-03-11+144431.png)
+![Example structure of arguments](https://www.dropbox.com/s/5grnsbjzvl9u5fj/Screenshot%202022-03-11%20144431.png?dl=0)
 
 For a better understanding, the screenshot above shows some of the many different positions and relations an argument can have with one or more predicates. In blue the arguments for the first predicate (nominate) are shown and in green for the second predicate (replace) of the sentence. Several tokens can be an argument for different predicates and have various semantic roles. For instance, as it can be seen in the screenshot, "individuals" is the ARG1 for the first predicate and ARG0 for the second. ARG0 is the agent, so the violational causer of an event, followed by ARG1 being the experiencer, the one that experiences event caused by ARG0. ARG-TEMP includes the time frame of the event and ARG2 is in this case the follow-up predicate explaining the next semantic roles. The goal in the classification task is to correctly classify these different semantic roles in relation to the predicates. 
 
